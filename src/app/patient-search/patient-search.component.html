@@ -3,13 +3,13 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3">
+            <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="paient_name" class="form-label">patient ID</label>
-                    <input type="text" class="form-control">
+                    <label for="patient_name" class="form-label">patient ID</label>
+                    <input name="patient_name" [(ngModel)]="patient_name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 cl-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a href="" class="btn btn-success">Search</a>
+                    <a (click)="searchp()" class="btn btn-success">Search</a>
                 </div>
             </div>
         </div>
